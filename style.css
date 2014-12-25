@@ -1,0 +1,309 @@
+body{
+	overflow:hidden;
+	font-family:Electrolize;
+	color:white;
+
+	-webkit-perspective:600;
+	-webkit-transform-style:preserve-3d;
+	-webkit-perspective-origin: 0% 0%;
+}
+a{
+	color:rgb(255,255,255);
+	text-decoration:underline;
+
+	transition:color .5s;
+	-moz-transition:color .5s;
+	-webkit-transition:color .5s;
+	-o-transition:color .5s;
+}
+a:hover{
+	color:rgba(0,150,255,1);
+	text-decoration:underline;
+}
+canvas{
+	position: fixed;
+	top:0px;
+	left:0px;
+}
+
+.content{
+	/*transition:all .5s;
+	-moz-transition:all .5s;
+	-webkit-transition:all .5s;
+	-o-transition:all .5s;*/
+}
+.content .navLoggedOut{
+	position:absolute;
+	right:10px;
+	top:-10px;
+	z-index:1;
+	width:310px;
+	height:20px;
+
+	padding:10px;
+	overflow: hidden;
+
+	background-color:rgba(53,121,123,.5);
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+	-moz-box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+	-webkit-box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+	box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+
+	text-align:right;
+	font-size:20px;
+	line-height:25px;
+
+	transition:height .5s;
+	-moz-transition:height .5s;
+	-webkit-transition:height .5s;
+	-o-transition:height .5s;
+}
+.content .navLoggedOut:hover{
+	height:150px;
+}
+.content .navLoggedOut .arrow{
+	position: absolute;
+	top:10px;
+	left:10px;
+
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid white;
+}
+.content .navLoggedOut .username{
+	position: relative;
+	top:-7px;
+	right:5px;
+}
+.content .navLoggedOut .profilePic{
+	position: relative;
+	top:-3px;
+	right:0px;
+}
+.content .navLoggedIn{
+	position:absolute;
+	right:10px;
+	top:-10px;
+	z-index:1;
+	width:310px;
+	height:20px;
+
+	padding:10px;
+	overflow: hidden;
+
+	background-color:rgba(53,121,123,.5);
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+	-moz-box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+	-webkit-box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+	box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+
+	text-align:right;
+	font-size:20px;
+	line-height:25px;
+
+	transition:height .5s;
+	-moz-transition:height .5s;
+	-webkit-transition:height .5s;
+	-o-transition:height .5s;
+}
+.content .navLoggedIn:hover{
+	height:180px;
+}
+.content .navLoggedIn .arrow{
+	position: absolute;
+	top:10px;
+	left:10px;
+
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid white;
+}
+.content .navLoggedIn .username{
+	position: relative;
+	top:-7px;
+	right:5px;
+}
+.content .navLoggedIn .profilePic{
+	position: relative;
+	top:-3px;
+	right:0px;
+}
+.content .tank{
+	position: absolute;
+	top:50px;
+	left:-10px;
+
+	width:1024px;
+	height:618px;
+
+	background-repeat: no-repeat;
+	background-image:url('images/tank.png');
+	background-size:contain;
+}
+.content .title{
+	position: absolute;
+	top:245px;
+	left:30px;
+
+	letter-spacing: -5px;
+
+	padding:10px;
+
+	width:370px;
+	height:240px;
+
+	background-image: url('/textures/horizon_stripe.png');
+	background-color:rgba(53,121,123,.3);
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+	border-top-right-radius:15px;
+	border-top-left-radius:15px;
+
+	-moz-box-shadow: 0px 0px 30px rgba(53,121,123,.6);
+	box-shadow: 0px 0px 30px rgba(53,121,123,.6);
+
+	font-size:105px;
+	color:rgba(255,255,255,1);
+
+	transform:rotateY(-13deg);
+	-ms-transform:rotateY(-13deg); /* IE 9 */
+	-moz-transform:rotateY(-13deg); /* Firefox */
+	-webkit-transform:rotateY(-13deg); /* Safari and Chrome */
+	-o-transform:rotateY(-13deg); /* Opera */
+}
+.content .menu{
+	position: relative;
+	top:215px;
+	left:590px;
+
+	padding:10px;
+
+	width:300px;
+	height:238px;
+
+	background-image: url('/textures/horizon_stripe.png');
+	background-color:rgba(53,121,123,.4);
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+	border-top-right-radius:15px;
+	border-top-left-radius:15px;
+
+	-moz-box-shadow: 0px 0px 30px rgba(53,121,123,.8);
+	box-shadow: 0px 0px 30px rgba(53,121,123,.8);
+
+	transform:rotateY(3deg);
+	-ms-transform:rotateY(3deg); /* IE 9 */
+	-moz-transform:rotateY(3deg); /* Firefox */
+	/*-webkit-transform:rotateY(12deg);*/ /* Safari and Chrome */
+	-webkit-transform:rotateY(3deg); /* Safari and Chrome */
+	-o-transform:rotateY(3deg); /* Opera */
+}
+.usersMenu{
+	position: absolute;
+	right:-190px;
+	bottom:80px;
+	top:60px;
+	width:200px;
+
+	overflow: hidden;
+
+	background-color:rgba(53,121,123,.5);
+	border-bottom-left-radius:15px;
+	border-top-left-radius:15px;
+
+	-moz-box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+	-webkit-box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+	box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+
+	transition:right .5s;
+	-moz-transition:right .5s;
+	-webkit-transition:right .5s;
+	-o-transition:right .5s;
+}
+.usersMenu:hover{
+	right:-10px;
+}
+.usersMenu .users{
+	position:absolute;
+	top:30px;
+	right:0px;
+	left:0px;
+	bottom:0px;
+
+	overflow-y: scroll;
+}
+.usersMenu .searchBox{
+	position: absolute;
+	top:5px;
+	left:5px;
+	right:32px;
+
+	color:rgba(0,0,0,1);
+	background-color:rgba(255,255,255,1);
+	border-bottom-left-radius:15px;
+	border-top-left-radius:15px;
+
+	border:1px solid black;
+}
+.usersMenu .submit{
+	position: absolute;
+	right:5px;
+	top:7px;
+
+	width:30px;
+	height:20px;
+
+	border-bottom-right-radius:15px;
+	border-top-right-radius:15px;
+
+	border:1px solid black;
+}
+.controls{
+	z-index:1;
+
+	position: absolute;
+	top:50px;
+	left:50px;
+	bottom:50px;
+	right:50px;
+
+	padding:10px;
+
+	display:none;
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=1);
+
+	background-color:rgba(53,121,123,.5);
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+	border-top-right-radius:15px;
+	border-top-left-radius:15px;
+
+	-moz-box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+	-webkit-box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+	box-shadow: 0px 0px 30px rgba(53,121,123,.9);
+
+	text-shadow:0px 0px 10px rgba(0,0,0,.9);
+
+	text-align:center;
+
+	transform:rotate(1deg);
+	-ms-transform:rotate(1deg); /* IE 9 */
+	-moz-transform:rotate(1deg); /* Firefox */
+	-webkit-transform:rotate(1deg); /* Safari and Chrome */
+	-o-transform:rotate(1deg); /* Opera */
+}
+
+.usercake{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	font-size:20px;
+}

@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>3D Tanks</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<script src="Three.js"></script>
+<script src="Stats.js"></script>
+<script src="tank.js"></script>
+<script src="controls.js"></script>
+<script src="pathing.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel='shortcut icon' href='../../favicon.ico' />
+</head>
+<body style="overflow:hidden;background-color:black;" onkeydown="keyDown(event);" onkeyup="keyUp(event);" onmousemove="mouseMove(event);">
+	
+	<div id="cursor" style="width:30px;height:30px;font-size:30px;opacity:.7;top:50%;left:50%;position:absolute;z-index:10;">+</div>
+	<script src="java.js"></script>
+
+	<div style="position:absolute;top:40%;left:30%;z-index:-10;color:yellow;font-size:40px;">You are leaving the combat zone, turn around!</div>
+</body>
+</html>
