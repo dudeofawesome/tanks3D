@@ -7,7 +7,7 @@ scene=new THREE.Scene();
 
 if ( typeof io !== "undefined" ) {
 // socket = io.connect('http://upaymeifixit.dlinkddns.com:4000');
-socket = io.connect('http://tanks3d-0rleans.rhcloud.com:4000');
+socket = io.connect('http://tanks3d-0rleans.rhcloud.com:80');
 } else {
 	socket = { on: function() { return null; } };
 }
