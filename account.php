@@ -71,7 +71,7 @@
 				<br />
 				&nbsp; &nbsp;<span style="font-size:14px;">Want to play on your own? Singleplayer!</span>
 				<br />
-				<a href="#multiplayer/tank.php" onclick="alert('Multiplayer is currently unavailable due to lack of funding for server hosting.\n Sorry :/');" style="font-size:30px;">Multiplayer</a>
+				<a href="multiplayer/tank.php" onclick="alert('Multiplayer is currently unavailable due to lack of funding for server hosting.\n Sorry :/');" style="font-size:30px;">Multiplayer</a>
 				<br />
 				&nbsp; &nbsp;<span style="font-size:14px;">Craving to blow up your friends? Multiplayer!</span>
 				<br />
